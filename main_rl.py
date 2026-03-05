@@ -55,7 +55,7 @@ def test_algo():
         raise ValueError("Invalid algorithm name. Please choose 'PPO', 'SAC', or 'A2C'.")  # Raise an error if an invalid algorithm is specified
 
     # Load the trained model
-    model = model.load(f"./models/ur_robot_{algo_name.lower()}_7000_steps")
+    model = SAC.load("./models/ur_robot_sac_10000_steps")
 
     # Reset the environment and get the initial observation
     obs, info = env.reset()
@@ -136,4 +136,5 @@ def plot_reward_data():
 if __name__ == '__main__':
     main()  # Run the main function to either train or test the model
     # plot_reward_data()  # Plot the training reward data
+
 
