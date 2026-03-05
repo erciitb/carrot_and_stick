@@ -76,10 +76,3 @@ The simulation will teleport the box randomly around the table, forcing the AI t
    ```
    python main_rl.py
    ```
-
-**How to use the Interactive GUI:**
-*  The 3D PyBullet window will open.
-*  Look at the right side of the screen under the "Params" tab.
-*  You will see sliders for Target X and Target Y.
-*  Adjust the sliders to pick a coordinate, then click the "Place Box & Start" button.
-*  The blue cube will spawn at your exact coordinates. Watch your trained AI sweep in and grab it!
