@@ -9,10 +9,11 @@ Let's power up the environment.
 ## ⚙️ Phase 1: Environment Setup
 Physics engines like PyBullet are heavy. To ensure your laptop doesn't crash trying to compile C++ from scratch, you must use ```Python 3.10``` for this environment.
 
-### **Step 1: Clone the Repository**
+### **Step 1: Download the Repository**
 
 Open your terminal or command prompt and pull down the workshop files:
 ```
+cd carrot_and_stick-main
 cd carrot_and_stick-main
 ```
 ### **Step 2: Create a Dedicated 3.10 Virtual Environment**
