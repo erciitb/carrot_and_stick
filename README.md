@@ -13,8 +13,7 @@ Physics engines like PyBullet are heavy. To ensure your laptop doesn't crash try
 
 Open your terminal or command prompt and pull down the workshop files:
 ```
-git clone https://github.com/erciitb/carrot_and_stick.git
-cd carrot_and_stick
+cd carrot_and_stick-main
 ```
 ### **Step 2: Create a Dedicated 3.10 Virtual Environment**
 
