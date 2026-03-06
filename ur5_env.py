@@ -210,24 +210,9 @@ class UR5RobotiqEnv(gym.Env):
             time.sleep(0.5)
             done = True
         elif self.current_step >= self.max_steps:
-            # =================================================================
-            # 🎯 ERC WORKSHOP CHALLENGE: THE TIMEOUT PENALTY
-            # =================================================================
-            # The robot ran out of time (reached max_steps) and the episode ended.
-            # Assign a penalty to punish the AI for failing.
-            # You can use `distance_to_target` to punish it more if it was far away.
             reward = 0.0
             done = True
         else:
-            # =================================================================
-            # 🎯 ERC WORKSHOP CHALLENGE: THE DENSE REWARD (EVERY STEP)
-            # =================================================================
-            # The AI algorithm's only goal is to MAXIMIZE its total score. 
-            # How do you write a reward function that mathematically forces 
-            # the arm to get closer to the cube on every single frame?
-            #
-            # Hint: If you make the reward positive (reward = distance_to_target), 
-            # the AI will realize that moving AWAY makes the number bigger!
             reward = 0.0
             done = False
      
@@ -352,3 +337,4 @@ class UR5Robotiq85:
         self.move_gripper(0.085)
         for _ in range(3500):
             p.stepSimulation()
+
