@@ -48,7 +48,7 @@ Right now, the AI has a body, but it doesn't know why it is moving. Before we ca
 
 1. Open **ur5_env.py** in your code editor.
 2. Scroll down to the step() function.
-3. Find the block labeled 🎯 ERC WORKSHOP CHALLENGE: THE DENSE REWARD.
+3. Find the block labeled 🎯 ERC WORKSHOP CHALLENGE
 4. You are provided the variable distance_to_target (the Euclidean distance between the robot's gripper and the cube).
 5. **The Challenge:** The AI wants to maximize its total score. Write a mathematical formula using distance_to_target that creates a penalty forcing the arm to move closer to the cube on every single frame.
 
