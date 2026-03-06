@@ -7,7 +7,7 @@ Your objective? Write the mathematical reward function that shapes the AI's psyc
 
 Let's power up the environment.
 ## ⚙️ Phase 1: Environment Setup
-Physics engines like PyBullet are heavy. To ensure your laptop doesn't crash trying to compile C++ from scratch, you must use Python 3.10 for this environment.
+Physics engines like PyBullet are heavy. To ensure your laptop doesn't crash trying to compile C++ from scratch, you must use ```Python 3.10``` for this environment.
 
 ### **Step 1: Clone the Repository**
 
