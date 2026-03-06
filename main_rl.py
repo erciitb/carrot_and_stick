@@ -34,7 +34,7 @@ def train_algo():
     checkpoint_callback = CheckpointCallback(save_freq=1000, save_path="./models", name_prefix=f"ur_robot_{algo_name.lower()}")
 
     # Train the model for a total of 10000 timesteps and save checkpoints
-    model.learn(total_timesteps=10000, callback=checkpoint_callback)
+    model.learn(total_timesteps=4000, callback=checkpoint_callback)
 
     # Save the trained model
     model.save(f"ur_robot_{algo_name.lower()}")
@@ -55,7 +55,7 @@ def test_algo():
         raise ValueError("Invalid algorithm name. Please choose 'PPO', 'SAC', or 'A2C'.")  # Raise an error if an invalid algorithm is specified
 
     # Load the trained model
-    model = SAC.load("./models/ur_robot_sac_10000_steps")
+    model = SAC.load("./models/ur_robot_sac_4000_steps")
 
     # Reset the environment and get the initial observation
     obs, info = env.reset()
@@ -136,5 +136,6 @@ def plot_reward_data():
 if __name__ == '__main__':
     main()  # Run the main function to either train or test the model
     # plot_reward_data()  # Plot the training reward data
+
 
 
